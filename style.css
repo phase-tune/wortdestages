@@ -1,0 +1,135 @@
+/* Grundlegende Einstellungen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    font-family: Plus Jakarta Sans;
+}
+
+/* Hauptcontainer */
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Logo und Datum */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+}
+
+.date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+}
+
+/* Hauptinhalt in der Mitte */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+/* Navigation Pfeile */
+.nav-arrow {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+/* Wortbereich */
+.word-section {
+    text-align: center;
+}
+
+.word {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.type {
+    color: #FFC55A;
+    font-style: italic;
+}
+
+.phonetic {
+    color: #FFC55A;
+}
+
+/* Definition */
+.definition {
+    padding: 10px;
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Untere Icons */
+.bottom-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dark-mode-toggle {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+/* .about-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-family: Plus Jakarta Sans;
+} */
+
+/* Responsive Anpassungen für Mobile Ansicht */
+@media (max-width: 768px) {
+    .logo {
+        top: 5px;
+        left: 5px;
+    }
+    .date {
+        top: 5px;
+        right: 5px;
+    }
+    .word {
+        font-size: 2rem;
+    }
+    .details, .definition {
+        font-size: 0.9rem;
+    }
+}
